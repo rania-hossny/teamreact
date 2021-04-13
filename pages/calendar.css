@@ -1,0 +1,16 @@
+.eventcalendar {
+  width: 83%;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+.fc-prev-button,
+.fc-next-button,
+.fc-today-button {
+  background-color: #216583 !important;
+  border: #216583 !important;
+}
+
+.fc-event-main-frame {
+  background-color: #216583 !important;
+}

@@ -1,0 +1,100 @@
+.navbar {
+  background-color: #216583;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.notif {
+  margin: 20px 0px;
+  font-size: 27px;
+}
+
+.bell {
+  position: relative;
+}
+.notification {
+  font-weight: 600;
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  top: 13px;
+  right: -4px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+.nav-menu {
+  background-color: #216583;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 2s;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 0.8s;
+}
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+  transition: 0.8s;
+}
+.nav-text a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+  width: 95%;
+  display: flex;
+
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 20px;
+  transition: 0.8s;
+}
+.nav-text a:hover {
+  background-color: rgb(13, 24, 53);
+  padding: 10px;
+}
+.nav-menu-items {
+  width: 100%;
+}
+.navbar-toggle {
+  background-color: #216583;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+span {
+  margin-left: 16px;
+}
