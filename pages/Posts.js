@@ -1,32 +1,20 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Col, Card, Nav, Row } from 'react-bootstrap';
-import "./team1.css";
 import { BiImageAdd } from "react-icons/bi";
 import photo from "../pietra-schwarzler-FqdfVIdgR98-unsplash.jpg";
 import { ImReply } from "react-icons/im";
 import { BiDotsVerticalRounded } from "react-icons/bi";
+import styles from "./teamcontent.module.css"
+
 
 const Posts = () => {
     return (
-        <div>
-             {/* <Nav variant="pills" defaultActiveKey="#first" className="navteam">
-             <Nav.Link href="#disabled" disabled>
-             Team Name
-        </Nav.Link>
-                <Nav.Item>
-                    <Nav.Link href="/team1">Posts</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="#link">Files</Nav.Link>
-                </Nav.Item>
-                </Nav> */}
-                
-      
-            <Card>
+        <Fragment>        
+            <Card className={styles.cardposts} >
   <Card.Body>
-    <Row className="Postheader">
+    <Row className={styles.Postheader}>
         <Col md={4}>
-            <div className="photop">
+            <div className={styles.photop}>
                <Row>
                     <Col md={4}><img src={photo}></img></Col> 
                     <Col md={8}>
@@ -36,14 +24,14 @@ const Posts = () => {
             </div>
         </Col >
         
-      <a className="dotsedit" type="button">  <BiDotsVerticalRounded /></a>
+      <a className={styles.dotsedit} type="button">  <BiDotsVerticalRounded /></a>
     </Row>
 
-    <Row className="postbody">
+    <Row className={styles.postbody}>
     <p>Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur</p>
-    <div className="linePost"></div>
+    <div className={styles.linePost}></div>
 
-    <div className="reply">
+    <div className={styles.reply}>
     <ImReply />
     <a type="button" >Reply</a>
     </div>
@@ -54,11 +42,11 @@ const Posts = () => {
 
 
   
-<Card>
+<Card className={styles.cardposts}>
   <Card.Body>
-    <Row className="Postheader">
+    <Row className={styles.Postheader}>
         <Col md={4}>
-            <div className="photop">
+            <div className={styles.photop}>
                <Row>
                <Col md={4}><img src={photo}></img></Col> 
                 <Col md={8}>
@@ -67,15 +55,15 @@ const Posts = () => {
                </Row>     
             </div>
         </Col >
-        <a className="dotsedit" type="button">  <BiDotsVerticalRounded /></a>
+        <a className={styles.dotsedit} type="button">  <BiDotsVerticalRounded /></a>
 
     </Row>
 
-    <Row className="postbody">
+    <Row className={styles.postbody}>
     <p>Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur</p>
-    <div className="linePost"></div>
+    <div className={styles.linePost}></div>
     
-    <div className="reply">
+    <div className={styles.reply}>
     <ImReply />
     <a type="button" >Reply</a>
     </div>
@@ -83,8 +71,9 @@ const Posts = () => {
     
   </Card.Body>
 </Card>
-        </div>
+        </Fragment>
     )
 }
 
 export default Posts
+
